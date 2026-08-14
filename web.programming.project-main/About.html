@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- sjdhgfdewhkejnhbrfenwjkfffffffffffffffg -->
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive IT Website</title>
+    <style>
+      * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Times New Roman', Times, serif;
+      margin: 0;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+    nav ul {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      list-style: none;
+      background-color: black;
+      padding: 0;
+      margin: 0;
+      height: 70px;
+      flex-wrap: wrap;
+    }
+
+    nav li {
+      margin: 0;
+    }
+
+    nav li a {
+      display: block;
+      padding: 10px;
+      color: white;
+      text-decoration: none;
+      font-size: 18px;
+      transition: color 0.3s;
+    }
+
+    nav li a:hover {
+      color: blue;
+    }
+
+    nav li:first-child {
+      margin-right: auto;
+      padding-left: 10px;
+    }
+
+    nav img {
+      height: 60px;
+      width: 60px;
+      border-radius: 50%;
+    }
+
+
+
+        .footer {
+            background-color: rgb(23, 21, 38);
+            color: #ccc;
+           padding: 40px 20px;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            width: 90%;
+            margin: auto;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .footer-col {
+          flex: 1 1 250px;
+        }
+
+        .footer-col h4,
+        .footer-col h6 {
+            color: #fff;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .footer-col h6 {
+           color: #fff;
+      font-size: 1.2rem;
+      margin-bottom: 15px;
+        }
+
+        .footer a {
+            color: #ccc;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            color: rgb(93, 67, 205);
+        }
+
+        .footer ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer ul li {
+            margin-bottom: 10px;
+        }
+
+
+        .social-icons {
+            display: flex;
+            gap: 10px;
+            margin-top: 15px;
+             padding: 10px;
+   font-size: 20px;
+        }
+
+        .social-icons a {
+            font-size: 25px;
+            color: #CADCFC;
+            transition: color 0.3s;
+             padding: 10px;
+  
+        }
+
+        .social-icons a:hover {
+            color: #fff;
+        }
+
+
+        .email-input {
+            padding: 8px;
+            width: 70%;
+             height: 40px;
+            border: none;
+            outline: none;
+            border-radius: 5px;
+        }
+
+        .btn-send {
+            padding: 8px 10px;
+            height: 40px;
+   width: 45px;
+            border: none;
+            background-color: rgb(93, 67, 205);
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-left: 5px;
+        }
+
+        .btn-send:hover {
+            background-color: #4c3ca8;
+        }
+
+
+        .career {
+            margin-top: 15px;
+            color: #ccc;
+        }
+
+
+        @media (max-width: 900px) {
+            .footer-col {
+                width: 45%;
+                margin-bottom: 20px;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .footer-col {
+              
+                text-align: center;
+            }
+
+            .social-icons {
+                justify-content: center;
+            }
+
+            .email-input {
+                width: 60%;
+            }
+        }
+
+        .N-img {
+            height: 250px;
+            width: 250px;
+
+        }
+
+        .a1 {
+            padding: 100px;
+            text-align: center;
+
+        }
+
+        .it-section {
+            padding: 60px 20px;
+            background-color: #f8f9fa;
+        }
+
+        .it-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .it-row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            text-align: center;
+        }
+
+        .it-card {
+            background: white;
+            border-radius: 10px;
+            padding: 30px 20px;
+            width: 320px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .it-card img {
+            margin-bottom: 15px;
+        }
+
+        .it-card h5 {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .it-card p {
+            font-size: 15px;
+            color: #555;
+            line-height: 1.5;
+        }
+
+        .it-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+
+
+        @media (max-width: 768px) {
+            .it-row {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .it-card {
+                width: 90%;
+            }
+        }
+            /* SECTION BASE */
+    .why-section {
+      text-align: center;
+      padding: 80px 5%;
+      background-color: rgb(23, 21, 38);
+    }
+
+    .why-section h2 {
+      font-size: 36px;
+      font-weight: 700;
+      margin-bottom: 40px;
+    }
+
+ 
+    .why-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
+    .why-card {
+      padding: 20px;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      border-bottom: 2px solid rgba(255, 255, 255, 0.4);
+      border-radius: 10px;
+      background-color: rgba(255, 255, 255, 0.05);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .why-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0px 10px 25px rgba(93, 67, 205, 0.6);
+    }
+
+    .K-img {
+      width: 200px;
+      height: 200px;
+      border-radius: 10px;
+      object-fit: cover;
+      filter: grayscale(0.4);
+      transition: all 0.3s ease;
+    }
+
+    .K-img:hover {
+      filter: grayscale(0);
+      transform: scale(1.2) rotate(7deg);
+    }
+
+    .why-card p {
+      margin: 10px 0;
+    }
+
+    .why-card p:first-of-type {
+      font-weight: 600;
+      font-size: 18px;
+    }
+
+    
+    @media (max-width: 768px) {
+      .K-img {
+        width: 150px;
+        height: 150px;
+      }
+
+      .why-section h2 {
+        font-size: 28px;
+      }
+    }
+
+
+    .N {
+      background-color: #a9a6e7;
+      padding: 60px 5%;
+    }
+
+    .N-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 40px;
+      justify-items: center;
+      align-items: center;
+    }
+    @media(max-width:768px){
+
+  .N-container{
+    gap: 25px;
+  }
+
+}
+
+    .N-item {
+      text-align: center;
+      transition: all 0.3s ease;
+    }
+
+    .N-img {
+      width: 275px;
+      height: 275px;
+      display: block;
+      margin: 0 auto 20px;
+      border-radius: 8px;
+      transition: transform 0.3s ease;
+      
+    }
+
+
+    .N-img:hover {
+      transform: scale(1.05);
+    }
+
+    .N h3 {
+      font-size: 1.25rem;
+      text-align: center;
+      transition: all 0.3s ease;
+      margin-top: 10px;
+    }
+
+    .N h3:hover {
+      border-bottom: 2px solid #2c2a3f;
+      cursor: pointer;
+      color: rgb(29, 24, 32);
+      border-bottom-left-radius: 20px;
+      border-bottom-right-radius: 20px;
+      box-shadow: 0 15px 25px rgb(23, 21, 38);
+      padding-bottom: 5px;
+    }
+
+    
+    @media (max-width: 768px) {
+      .N {
+        padding: 40px 20px;
+      }
+
+      .N h3 {
+        font-size: 1rem;
+      }
+
+      .N-img {
+        max-width: 100%;
+      }
+    }
+   .welcome-section{
+  display:flex;
+  padding:50px;
+  text-align:center;
+  align-items:center;
+  justify-content:center;
+  gap:40px;
+  flex-wrap:wrap;
+}
+
+.welcome-image img{
+  width:100%;
+  max-width:500px;
+  height:auto;
+  border-radius:20px;
+  border:2px solid black;
+  object-fit:cover;
+  display:block;
+}
+
+@media(max-width:768px){
+
+  .welcome-section{
+    flex-direction:column;
+    padding:20px;
+  }
+
+  .welcome-image img{
+    width:100%;
+    height:auto;
+  }
+
+}
+    </style>
+</head>
+
+<body>
+
+
+    <nav>
+    <ul>
+      <li><a href="#"><img src="logo1.jpg" alt="Logo"></a></li>
+      <li><a href="index.html">Home</a></li>
+          <li><a href="About.html">About</a></li>
+          <li><a href="ourteam.html">Team</a></li>
+          <li><a href="contactus.html">Contact</a></li>
+    </ul>
+  </nav>
+    <section style="margin-top: 5px;">
+  <img src="i15.jpg" alt="" width="99%" style="margin: 0 auto; display: block;">
+    </section>
+    <section>
+      <div class="welcome-section">
+            <div>
+                <p style="font-size: 30px;"><b>Welcome to our Company</b></p> <br><br>
+                <hr style="width:100%;" size="5px" color="_blank"> <br>
+                <p>Welcome to the team! We are thrilled to have you join us and look forward to working with you. We're
+                    excited about the skills and experience you bring and believe you will be a valuable asset to our
+                    company. </p><br><br><br><br>
+                <img src="i18.jpg" alt="Welcome Image"
+                    style="max-width:100%; height:auto; border-radius:50%;">
+            </div>
+           <div class="welcome-image">
+                <img src="i17.jpg" alt="Team Image">
+            </div>
+        </div>
+    </section>
+   
+ <section class="why-section" style="color: white;">
+    <h2>Why Choose Us?</h2>
+
+    <div class="why-grid">
+      <div class="why-card">
+        <img src="i19.jpg" class="K-img" alt="Innovation">
+        <p>Innovation</p>
+        
+      </div>
+
+      <div class="why-card">
+        <img src="i20.jpg" class="K-img" alt="Customer-First">
+        <p>Customer-First</p>
+        
+      </div>
+
+      <div class="why-card">
+        <img src="i21.jpg"class="K-img" alt="Support">
+        <p>24/7 Support</p>
+        
+      </div>
+
+      <div class="why-card">
+        <img src="i22.jpg" class="K-img" alt="Research and Development">
+        <p>Research And Development</p>
+        
+      </div>
+
+      <div class="why-card">
+        <img src="i23.jpg" class="K-img" alt="Provides Services">
+        <p>Provides Services</p>
+        
+      </div>
+
+      <div class="why-card">
+        <img src="i24.jpg" class="K-img" alt="Deliver Work On Time">
+        <p>Deliver Work On Time</p>
+        
+      </div>
+    </div>
+  </section>
+ <section class="N">
+    <div class="N-container">
+      <div class="N-item">
+        <img class="N-img" src="i30.jpg" alt="Full Stack Development">
+        <h3>Full Stack Development</h3>
+      </div>
+
+      <div class="N-item">
+        <img class="N-img" src="i29.jpg" alt="Flutter Application Development">
+        <h3>Flutter Application Development</h3>
+      </div>
+      <div class="N-item">
+        <img class="N-img" src="i27.jpg" alt="UI/UX Design">
+        <h3>UI/UX Design</h3>
+      </div>
+
+      <div class="N-item">
+        <img class="N-img" src="i28.jpg" alt="Digital Marketing">
+        <h3>Digital Marketing</h3>
+      </div>
+
+      <div class="N-item">
+        <img class="N-img" src="i25.jpg" alt="Cyber Security">
+        <h3>Cyber Security</h3>
+      </div>
+
+      <div class="N-item">
+        <img class="N-img" src="i26.jpg" alt="Web Design">
+        <h3>Web Design</h3>
+      </div>
+
+    </div>
+  </section>
+
+    <section class="it-section">
+        <div class="it-container">
+            <div class="it-row">
+                <div class="it-card">
+                    <img src="i19.png" alt="Software" width="80">
+                    <h5>Software</h5>
+                    <p>Software refers to the collection of programs, applications, and operating information that tell
+                        a computer how to work. It enables users to perform specific tasks such as data processing,
+                        communication, and design.
+                    </p>
+                </div>
+
+                <div class="it-card">
+                    <img src="images (1).png" alt="it solution"
+                        width="80">
+                    <h5>IT Solutions</h5>
+                    <p>IT Solutions include the technologies, services, and strategies used to solve business challenges
+                        through digital transformation. These solutions may involve software development, network setup,
+                        cybersecurity, cloud computing, and technical support.
+                    </p>
+                </div>
+
+                <div class="it-card">
+                    <img src="images (2).png" alt="Storage"
+                        width="80">
+                    <h5>Storage</h5>
+                    <p>Storage refers to the technology and systems used to save and manage data securely. It includes
+                        both physical hardware like hard drives and cloud-based platforms that allow organizations to
+                        store, retrieve, and back up data efficiently.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+
+
+                <div class="footer-col">
+                    <h4 class="text-warning">NA</h4>
+                    <small class="text-uppercase">Our Location</small>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+                    <small class="text-uppercase">Register Now</small>
+                    <p><a href="mailto:info@example.com">abc@example.com</a></p>
+
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/" target="_blank"><ion-icon
+                                name="logo-facebook"></ion-icon></a>
+                        <a href="https://x.com/i/flow/login" target="_blank"><ion-icon
+                                name="logo-twitter"></ion-icon></a>
+                        <a href="https://www.instagram.com/" target="_blank"><ion-icon
+                                name="logo-instagram"></ion-icon></a>
+                        <a href="https://www.linkedin.com/" target="_blank"><ion-icon
+                                name="logo-linkedin"></ion-icon></a>
+                    </div>
+                </div>
+
+
+                <div class="footer-col">
+                    <h6>Our Services</h6>
+                    <ul>
+                        <li><a href="#">Web Design & Development</a></li>
+                        <li><a href="#">UI/UX Design</a></li>
+                        <li><a href="#">Graphic Design</a></li>
+                        <li><a href="#">Cyber Security</a></li>
+                        <li><a href="#">Game Development</a></li>
+                        <li><a href="#">Application Development</a></li>
+                    </ul>
+                </div>
+
+
+                <div class="footer-col">
+                    <h6>Company</h6>
+                    <ul>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="About.html">About</a></li>
+                                <li><a href="ourteam.html">Team</a></li>
+                                <li><a href="contactus.html">Contact Us</a></li>
+                            </ul>
+                        </div>
+
+
+                <div class="footer-col">
+                   <h6>Get Updates</h6>
+        <form>
+          <input type="email" placeholder="Email Address" class="email-input">
+          <button class="btn-send"><ion-icon name="send-outline"></ion-icon></button>
+        </form>
+                    <p class="career">Start Your Career...</p>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+
+
+
+</body>
+
+</html>
