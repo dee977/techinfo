@@ -1074,6 +1074,16 @@
     ::-webkit-scrollbar-track { background: var(--bg-deep); }
     ::-webkit-scrollbar-thumb { background: var(--accent); border-radius: 4px; }
     ::-webkit-scrollbar-thumb:hover { background: #574bff; }
+
+    /* Hide Bolt badge */
+    a[href*="bolt.new"], a[href*="bolt.new"] *,
+    [class*="bolt-badge"], [id*="bolt-badge"],
+    [class*="bolt-badge-container"], [id*="bolt-badge-container"] {
+      display: none !important;
+      visibility: hidden !important;
+      opacity: 0 !important;
+      pointer-events: none !important;
+    }
   </style>
   <meta property="og:image" content="https://bolt.new/static/og_default.png">
     <meta name="twitter:card" content="summary_large_image">
